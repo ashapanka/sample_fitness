@@ -1,11 +1,33 @@
-/* Styles for fitness site */
+/*
+Theme Name: fitnesswebsite
+*/
 
 .container {
     background-color:#eee;
 }
 
 header, footer {
-    background-color:#6aa4c0;
+    background-color:#dc64d4;
+}
+
+#jumbo_ad{
+    margin:10px auto;
+}
+
+#jumbo_ad a, #jumbo_ad p {
+  text-align: center;
+}
+
+#jumbo_ad a {
+  display: block;
+}
+
+#jumbo_ad p {
+  cursor: pointer;
+}
+
+img {
+  border: 1px solid #aaa;
 }
 
 .top_story img {
@@ -21,4 +43,12 @@ h2 {
 
 .product {
     margin-bottom: 10px;
+}
+
+.product .product_name {
+  font-weight:bold;
+}
+
+.product a, .product span {
+  display:block;
 }
