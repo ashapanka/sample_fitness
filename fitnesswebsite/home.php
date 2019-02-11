@@ -28,10 +28,10 @@
                             $top_story->the_post();
                             ?>
 
-                            <div class="col-8 top_story">
+                            <div class="col-12 col-md-8 top_story">
                                 <?php echo the_post_thumbnail('top-story');?>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                                 <a href="<?php echo get_permalink();?>"><?php echo get_the_title()?></a>
                                 <p><?php echo the_excerpt();?></p>
                             </div>
@@ -62,7 +62,7 @@
                                 $product_list->the_post();
                                 ?>
 
-                                    <div class="col product">
+                                    <div class="col-12 col-sm-6 col-lg-3 product">
                                         <?php echo the_post_thumbnail();?>
                                         <a href="<?php echo get_permalink();?>" class="product_name"><?php echo get_the_title()?></a>
                                         <span>Cost: $<?php echo get_field(cost);?></span>

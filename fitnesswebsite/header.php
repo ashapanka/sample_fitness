@@ -28,7 +28,7 @@
               </header>
               <div id="jumbo_ad">
                   <a href="https://www.google.com" target="_blank">
-                      <img src="https://via.placeholder.com/728x600.png?text=Jumbo+Ad" alt="Jumbo Ad" >
+                      <img src="https://via.placeholder.com/728x600.png?text=Jumbo+Ad" class="img-fluid" alt="Jumbo Ad" >
                   </a>
                   <p onclick="jumbo_close()">Close this ad</p>
               </div>

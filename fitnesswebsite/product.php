@@ -8,10 +8,24 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
-      'supports'  => array( 'title', 'excerpt', 'editor', 'thumbnail' )    
+      'supports'  => array( 'title', 'excerpt', 'editor', 'thumbnail' )
     )
   );
 }
 add_action( 'init', 'create_post_type' );
+
+function producttype_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'product-type',
+		'product',
+		array(
+			'label' => __( 'Product Type' ),
+			'rewrite' => array( 'slug' => 'product-type' ),
+			'hierarchical' => true,
+		)
+	);
+}
+add_action( 'init', 'producttype_init' );
 
 ?>

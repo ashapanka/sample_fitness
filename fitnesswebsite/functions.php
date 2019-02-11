@@ -14,17 +14,4 @@ add_theme_support( 'post-thumbnails', array( 'post', 'product' ) ); // Posts and
 set_post_thumbnail_size(200, 200, true);
 add_image_size( 'top-story', 600, 400 );
 
-function producttype_init() {
-	// create a new taxonomy
-	register_taxonomy(
-		'product-type',
-		'product',
-		array(
-			'label' => __( 'Product Type' ),
-			'rewrite' => array( 'slug' => 'product-type' ),
-			'hierarchical' => true,
-		)
-	);
-}
-add_action( 'init', 'producttype_init' );
 ?>
